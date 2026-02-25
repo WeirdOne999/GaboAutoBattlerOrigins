@@ -58,6 +58,7 @@ public class Knight : Unit
 
     public override void OnKill(Unit killedUnit)
     {
+        Debug.Log("Knight Killed Somethihg");
         base.OnKill(killedUnit);
         killedEnemy = true;
         CheckEvolution();
